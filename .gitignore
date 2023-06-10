@@ -1,0 +1,19 @@
+# Complied file
+*.tfstate
+*.tfstate.backup
+*.tfstate.lock.info
+*.tfstate.lock.hcl
+# logs
+*.log
+# Directories
+.terraform/
+# SSH keys
+*.pem
+# Backup file
+*.bak
+# Ignored Terraform File
+*gitigrnore*.tf
+# Ignored Mac .DS_store files
+.DS_Store
+# Ignored vscode files
+.vscode/
