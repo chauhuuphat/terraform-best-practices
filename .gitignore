@@ -2,7 +2,7 @@
 *.tfstate
 *.tfstate.backup
 *.tfstate.lock.info
-*.tfstate.lock.hcl
+*.terraform.lock.hcl
 # logs
 *.log
 # Directories
