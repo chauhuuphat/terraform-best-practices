@@ -1,0 +1,19 @@
+output "instance_1_id" {
+  description = "The ID of the example instance"
+  value       = try(aws_instance.instance_1.id)
+}
+
+output "instance_2_id" {
+  description = "The ID of the example instance"
+  value       = try(aws_instance.instance_2.id)
+}
+
+output "website_s3_bucket" {
+  description = "The domain name of website"
+  value       = try(module.website_s3_bucket.domain)
+}
+
+output "website_s3_bucket_2" {
+  description = "The domain name of website"
+  value       = try(module.website_s3_bucket_2.domain)
+}
