@@ -29,14 +29,14 @@
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_environment"></a> [environment](#input\_environment) | Value of the Environment Taf for S3 bucket | `string` | n/a | yes |
+| <a name="input_environment"></a> [environment](#input\_environment) | Value of the Environment for S3 bucket | `string` | n/a | yes |
 | <a name="input_instance_1_ami"></a> [instance\_1\_ami](#input\_instance\_1\_ami) | value of the AMI ID for the EC2 instance | `string` | n/a | yes |
 | <a name="input_instance_1_name"></a> [instance\_1\_name](#input\_instance\_1\_name) | Vaule of the Name taf for the EC2 Instance | `string` | n/a | yes |
 | <a name="input_instance_1_type"></a> [instance\_1\_type](#input\_instance\_1\_type) | Vaule of Instance Type for the EC2 Instance | `string` | n/a | yes |
 | <a name="input_instance_2_ami"></a> [instance\_2\_ami](#input\_instance\_2\_ami) | value of the AMI ID for the EC2 instance | `string` | n/a | yes |
 | <a name="input_instance_2_name"></a> [instance\_2\_name](#input\_instance\_2\_name) | Vaule of the Name taf for the EC2 Instance | `string` | n/a | yes |
 | <a name="input_instance_2_type"></a> [instance\_2\_type](#input\_instance\_2\_type) | Vaule of Instance Type for the EC2 Instance | `string` | n/a | yes |
-| <a name="input_terraform"></a> [terraform](#input\_terraform) | Value of the Terraform Taf for S3 bucket | `string` | n/a | yes |
+| <a name="input_terraform"></a> [terraform](#input\_terraform) | Value of the Terraform Tag for S3 bucket | `string` | n/a | yes |
 | <a name="input_website_s3_bucket_1_name"></a> [website\_s3\_bucket\_1\_name](#input\_website\_s3\_bucket\_1\_name) | Vaule of the Name tag for the S3 bucket | `string` | n/a | yes |
 | <a name="input_website_s3_bucket_2_name"></a> [website\_s3\_bucket\_2\_name](#input\_website\_s3\_bucket\_2\_name) | Vaule of the Name tag for the S3 bucket | `string` | n/a | yes |
 
