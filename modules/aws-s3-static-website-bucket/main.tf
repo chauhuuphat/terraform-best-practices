@@ -61,29 +61,3 @@ resource "aws_s3_bucket_policy" "s3_bucket" {
         aws_s3_bucket_website_configuration.s3_bucket,
     ]
 }
-
-# resource "aws_s3_bucket_policy" "s3_bucket" {
-#   bucket = aws_s3_bucket.s3_bucket.id
-#   policy = data.aws_iam_policy_document.public_read_access.json
-#   depends_on = [ 
-#     aws_s3_bucket_website_configuration.s3_bucket,
-#     ]
-# }
-
-# data "aws_iam_policy_document" "public_read_access" {
-#   statement {
-#     principals {
-#       type        = "*"
-#       identifiers = ["*"]
-#     }
-
-#     actions = [
-#       "s3:GetObject",
-#     ]
-
-#     resources = [
-#       aws_s3_bucket.s3_bucket.arn,
-#       "${aws_s3_bucket.s3_bucket.arn}/*",
-#     ]
-#   }
-# }
