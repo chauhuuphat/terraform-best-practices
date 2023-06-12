@@ -38,12 +38,12 @@ variable "website_s3_bucket_2_name" {
 }
 
 variable "terraform" {
-  description = "Value of the Terraform Taf for S3 bucket"
+  description = "Value of the Terraform Tag for S3 bucket"
   type        = string
 }
 
 variable "environment" {
-  description = "Value of the Environment Taf for S3 bucket"
+  description = "Value of the Environment for S3 bucket"
   type        = string
 }
 
