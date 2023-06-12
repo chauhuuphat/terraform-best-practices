@@ -20,7 +20,7 @@ resource "aws_instance" "instance_2" {
 
 module "website_s3_bucket" {
   source      = "./modules/aws-s3-static-website-bucket"
-  bucket_name = "phatch1-terraform-best-practices"
+  bucket_name = var.website_s3_bucket_1_name
   tags = {
     Terraform   = "true"
     Environment = "test"
@@ -30,9 +30,10 @@ module "website_s3_bucket" {
 
 module "website_s3_bucket_2" {
   source      = "./modules/aws-s3-static-website-bucket"
-  bucket_name = "phatch1-terraform-best-practices-2"
+  bucket_name = var.website_s3_bucket_2_name
   tags = {
-    Terraform   = "true"
-    Environment = "test"
+    Terraform   = var.terraform
+    Environment = var.environment
   }
 }
+
